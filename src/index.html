@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aria's Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+<!--Block: site-header & seperate block for nav -->
+<header class="site-header">
+    <a class="site-header__logo" href="/">My Site</a>
+
+    <nav class="nav" aria-label="Primary">
+        <ul class="nav__list" role="list">
+            <li class="nav__item"><a class="nav__link" href="#hero">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#cards">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Block: hero -->
+<main id="main-container">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="hero__title">Hello</h1>
+        <p class="hero__subtitle">Welcome to my page</p>
+        <img src="media/aria.jpeg" alt="Portrait of Aria" class="hero__image">
+    </section>
+
+    <!-- Block: cards (wrapper) + Block: card (reusable component) -->
+    <section id="cards" class="cards" aria-labelledby="cards-title">
+        <h2 id="cards-title" class="cards__title">Cards</h2>
+
+        <ul class="cards__list" role="list">
+            <!-- Card1: Image-->
+            <li class="cards__item">
+               <article class="card" aria-labelledby="card1-title">
+                   <img class="card__img" src="media/Pose.PNG" alt="Sample">
+                   <h3 id="card1-title" class="card__title">Image Card</h3>
+                   <p class="card__body">An image of me when I..</p>
+               </article>
+            </li>
+
+            <!-- Card2: Video -->
+            <li class="cards__item">
+                <article class="card card-featured" aria-labelledby="card2-title">
+                    <figure class="card__media" >
+                        <video
+                                class="card__video"
+                                controls
+                                preload="metadata"
+                                poster="media/avatar.PNG"
+                        >
+                            <source src="media/aria.MP4" type="video/mp4">
+                        </video>
+                        <figcaption class="card__caption">A quick intro-video about Aria</figcaption>
+                    </figure>
+
+                    <h3 id="card2__title" class="card__title">Intro Video</h3>
+                    <p class="card__body">A featured card that includes a video.</p>
+                </article>
+            </li>
+
+            <!-- Card3: Image-->
+            <li class="'cards__item">
+                <article class="card" aria-labelledby="card3--title">
+                    <img class="card__img" src="media/aria.jpeg" alt="My Avatar">
+                    <h3 id="card3-title" class="card--title">Another Me</h3>
+                    <p class="card__body">When I asked chat GPT to generate me</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="contact__title">Contact</h2>
+        <ul class="contact__list" role="list">
+            <li class="contact__item">
+                <a class="contact__link" href="aria-98@hotmail.com">Contact Aria here</a>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+
+</body>
+</html>
