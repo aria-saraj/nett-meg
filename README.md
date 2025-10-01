@@ -1,6 +1,6 @@
 # Static webpage using HTML + CSS
 
-A simple, responsive site built with semantic HTML and vanilla CSS (no frameworks).
+A simple, responsive site built with simple HTML and vanilla CSS (no frameworks).
 
 ## Project Structure
 
@@ -24,11 +24,7 @@ A simple, responsive site built with semantic HTML and vanilla CSS (no framework
 **aria-labelledby**: points to another element’s text (by id) to use as the name.
 
 
-**Rules:**
-Icon-only button → aria-label="Play video".
-Landmark with no heading → <nav aria-label="Primary">.
-Section with heading → aria-labelledby="section-heading-id".
-Form control → use real <label for="…"> first; only fall back to ARIA if you can’t.
+
 
 
 
