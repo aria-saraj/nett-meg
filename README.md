@@ -1,30 +1,27 @@
-# Static webpage using HTML + CSS
+# nett-meg
 
-A simple, responsive site built with simple HTML and vanilla CSS (no frameworks).
+En enkel, responsiv nettside laget med ren **HTML** og **CSS** – uten rammeverk. Koden følger BEM-navngiving og bruker ARIA-attributter for bedre universell utforming. Perfekt som portefølje-/prosjekt-side eller som utgangspunkt for videre utvikling.  
+ 
 
-## Project Structure
+## Mål og funksjoner
+- **Ren og lett**: Ingen byggsteg eller avhengigheter – åpne bare HTML-filen i nettleseren.
+- **Responsiv layout**: Skalerer pent på mobil, nettbrett og desktop.
+- **Tilgjengelighet i fokus**: ARIA-attributter, semantiske elementer og fornuftig kontrast.
+- **Forutsigbar struktur** med BEM:
+  - **Blokker**: f.eks. `hero`, `cards`, `card`, `contact`, `nav`, `site-header`
+  - **Elementer**: f.eks. `hero__image`, `cards__list`, `card__title`, `contact__link`
+  - **Modifikatorer**: f.eks. `card--featured`
 
+## Kom i gang
 
-## naming convention: 
+### 1) Kjør lokalt
+Ingen installasjon nødvendig.  
+Last ned repoet og åpne startfilen i nettleser:
 
-**id** = unique hook for ARIA/links/JS.
-**class** = styling (BEM). Keep both only when you need both.
+```bash
+# via git
+git clone https://github.com/aria-saraj/nett-meg.git
+cd nett-meg
 
-
-**Blocks**: hero, cards, card, contact, nav, site-header
-**Elements**: hero__image, cards__list, card__title, contact__link
-**Modifiers**: card--featured
-**IDs** are for in-page links: #hero, #cards, #contacts 
-
-**nav** = the block: the whole navigation component
-**nav__item** = an element: the list item <li> that controls the layout (spacing, positioning, dropdown anchor)
-**nav__link** = an element: the clickbait link <a> that controls visuals and interactions(color, hover, focus)
-
-**aria-label**: gives an element an invisible name directly in the attribute.
-**aria-labelledby**: points to another element’s text (by id) to use as the name.
-
-
-
-
-
-
+# åpne prosjektet (typisk i /src)
+# dobbelklikk på index.html eller høyreklikk → "Åpne i nettleser"
