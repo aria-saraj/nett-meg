@@ -1,12 +1,11 @@
-# nett-meg
+# nett-meg (I endring)
 
-En enkel, responsiv nettside laget med ren **HTML** og **CSS** – uten rammeverk. Koden følger BEM-navngiving og bruker ARIA-attributter for bedre universell utforming. Perfekt som portefølje-/prosjekt-side eller som utgangspunkt for videre utvikling.  
- 
+En enkel, responsiv nettside laget med ren **HTML** og **CSS** – uten rammeverk. Koden følger BEM-navngiving og bruker ARIA-attributter for bedre universell utforming. 
+
 
 ## Mål og funksjoner
-- **Ren og lett**: Ingen byggsteg eller avhengigheter – åpne bare HTML-filen i nettleseren.
-- **Responsiv layout**: Skalerer pent på mobil, nettbrett og desktop.
-- **Tilgjengelighet i fokus**: ARIA-attributter, semantiske elementer og fornuftig kontrast.
+- **Ren og lett**: Åpne HTML-filen i nettleseren.
+- **Responsiv layout**: Pent på mobil, nettbrett og desktop.
 - **Forutsigbar struktur** med BEM:
   - **Blokker**: f.eks. `hero`, `cards`, `card`, `contact`, `nav`, `site-header`
   - **Elementer**: f.eks. `hero__image`, `cards__list`, `card__title`, `contact__link`
